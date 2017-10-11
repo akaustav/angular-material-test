@@ -1,22 +1,14 @@
-<h1 class="mat-display-1">Jackdaws love my big sphinx of quartz.</h1>
-<h2>The quick brown fox jumps over the lazy dog.</h2>
+<h1 class="mat-display-1">{{ title }}</h1>
 
-<h3>Basic Buttons</h3>
-<div class="button-row">
-  <button mat-button>Basic</button>
-  <button mat-button color="primary">Primary</button>
-  <button mat-button color="accent">Accent</button>
-  <button mat-button color="warn">Warn</button>
-  <button mat-button disabled>Disabled</button>
-  <a mat-button routerLink=".">Link</a>
-</div>
-
-<h3>Raised Buttons</h3>
-<div class="button-row">
-  <button mat-raised-button>Basic</button>
-  <button mat-raised-button color="primary">Primary</button>
-  <button mat-raised-button color="accent">Accent</button>
-  <button mat-raised-button color="warn">Warn</button>
-  <button mat-raised-button disabled>Disabled</button>
-  <a mat-raised-button routerLink=".">Link</a>
-</div>
+<form>
+  <mat-form-field>
+    <input matInput type="text" name="name" placeholder="Name">
+  </mat-form-field>
+  <mat-form-field>
+    <input matInput type="text" name="city" placeholder="City">
+  </mat-form-field>
+  <mat-form-field>
+    <input matInput type="text" name="state" placeholder="State">
+  </mat-form-field>
+  <button mat-raised-button color="primary">Submit</button>
+</form>
