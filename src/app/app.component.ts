@@ -6,8 +6,8 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Using NgForm with NgModel';
-  name: string;
-  city: string;
-  state: string;
+  public title = 'Using NgForm with NgModel';
+  public name: string;
+  public city: string;
+  public state: string;
 }

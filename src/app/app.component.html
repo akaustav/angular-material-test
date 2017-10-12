@@ -3,14 +3,16 @@
     <mat-card-title>{{ title }}</mat-card-title>
 
     <mat-form-field>
-      <input matInput type="text" name="name" placeholder="Name">
-      <mat-hint align="start">Don't disclose personal info</mat-hint>
+      <input matInput type="text" name="name" placeholder="Name" [(ngModel)]="name">
+      <mat-hint align="start">{{ name }}</mat-hint>
     </mat-form-field>
     <mat-form-field>
-      <input matInput type="text" name="city" placeholder="City">
+      <input matInput type="text" name="city" placeholder="City" [(ngModel)]="city">
+      <mat-hint align="start">{{ city }}</mat-hint>
     </mat-form-field>
     <mat-form-field>
-      <input matInput type="text" name="state" placeholder="State">
+      <input matInput type="text" name="state" placeholder="State" [(ngModel)]="state">
+      <mat-hint align="start">{{ state }}</mat-hint>
     </mat-form-field>
 
     <button mat-raised-button color="primary">Submit</button>
