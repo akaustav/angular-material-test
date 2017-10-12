@@ -7,4 +7,7 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'Using NgForm with NgModel';
+  name: string;
+  city: string;
+  state: string;
 }
